@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tack</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <nav>
+      <ul>
+        <li><a href='/about_us'>About Us</a></li>
+        <li><a href='/faqs'>Faqs</a></li>
+        <li><a href='/terms_and_conditions'>Terms & Conditions</a></li>
+      </ul>
+    </nav>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
